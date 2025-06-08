@@ -10,6 +10,7 @@ TELEGRAM_API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
 @app.route('/', methods=['GET'])
 def index():
     print("má")
+    return "mạ"
 
 @app.route('/send', methods=['GET'])
 def send_telegram():
