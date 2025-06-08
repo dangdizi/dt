@@ -8,6 +8,10 @@ BOT_TOKEN = "6766286762:AAHqicKqezqAMRYSgPc7lKzt4RokvDsJxpc"
 TELEGRAM_API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
 
 @app.route('/', methods=['GET'])
+def index():
+    print("má")
+
+@app.route('/send', methods=['GET'])
 def send_telegram():
     chat_id = "1880412634"
     text = "messager"
